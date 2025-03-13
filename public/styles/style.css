@@ -1,0 +1,139 @@
+
+#lesson-input {
+    margin-right: 2rem;
+}
+
+fieldset{
+    width: 500px;
+    border-radius:5px; 
+    margin:0 auto  
+}
+
+#lesson-settings{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 3px;
+    width: 500px;
+    border-radius:5px; 
+    margin:0 auto
+}
+
+.languages {
+    display:flex;
+    flex-direction: row;
+    width: 500px;
+}
+
+.language-panel {
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: end;
+    width: 225px;
+
+    position: relative;
+    padding: 10px 10px 10px 5px;
+    margin: 15px 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.border-text {
+    position: absolute;
+    top: -10px; /* Moves text inside the top border */
+    left: 10%; /* Positions text just left of center */
+    background-color: white; /* Matches background to hide border behind */
+}
+
+
+/* Style the dropdown (select element) */
+select {
+    margin: 5px;
+    width: 125px; /* Custom width */
+    height: 25px; /* Custom height */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid gray; /* Border color */
+    background-color: ffffff; /* Background color */
+    color: #333; /* Text color */
+    font-size: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    margin-bottom: 4px;
+}
+
+/* Style the dropdown container to hold a custom arrow */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Custom arrow */
+.dropdown-container::after {
+    content: "▼"; /* Unicode for dropdown arrow */
+    font-size: 10px;
+    color: grey;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent clicking */
+}
+
+/* Style the dropdown on hover */
+select:hover {
+    background-color: #e9ecef;
+}
+
+/* Style the dropdown when focused */
+select:focus {
+    outline: none;
+    border-color: #0056b3;
+    background-color: #ffffff;
+}
+
+.phrase-entry{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 10px;
+}
+
+#phrase{
+    background-color:white;
+    width: 30rem; /* Set fixed width */
+    height: 2rem; /* Set fixed height */
+    resize: none; /* Disable resizing */
+    overflow-y: auto; /* Show vertical scrollbar when needed */
+}
+
+.add-phrase{
+    width: 6rem;
+    border-radius: 5px;
+}
+
+.phrase-item{
+    width:500px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    margin: .75rem auto;
+    
+}
+
+.phrase-item div:first-child {
+    font-weight: bold;
+}
+.phrase-item div:nth-child(2) {
+    font-style:italic;
+}
+
+.phrase {
+    margin: 0 1rem;
+    line-height:1.8;
+}

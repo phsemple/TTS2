@@ -1,0 +1,8 @@
+
+
+The testPhraseCreate is completed. 
+Run the createLesson process to store in the database.
+Test the playback of the audio from the database to the index.html script
+test the delete and update of phrases.
+get list of lessons
+get a lesson by id

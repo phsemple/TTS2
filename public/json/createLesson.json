@@ -1,0 +1,29 @@
+
+{
+    "lesson": "Wait/Need",
+    "description": "Use Wait/Need in sentences. Learn difference.",
+    "category": "Verb Usage",
+    "languages": [
+        {
+            "type": "base",
+            "code": "en",
+            "region": "en-US",
+            "voice": "Scott"
+        },
+        {
+            "type": "target",
+            "code": "sw",
+            "region": "sw-TZ",
+            "voice": "Rehema"
+        }
+    ],
+    "basePhrases":[
+        { "phrase": "I want"  },
+        { "phrase": "I need"  },
+        { "phrase": "I need a doctor"},
+        { "phrase": "I want a cookie"},
+        { "phrase": "I need to be wanted"}
+    ],
+    "targetPhrases":[]
+    
+}

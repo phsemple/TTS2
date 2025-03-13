@@ -1,0 +1,23 @@
+
+# Step 1: Create a new branch for refactoring
+git checkout -b PhraseHandling
+
+# Step 2: Enable sparse-checkout mode
+git sparse-checkout init --cone
+
+# Step 3: Define the files/folders you want to keep
+git sparse-checkout set index.html main.js .env 
+
+# Step 4: Refresh your working directory
+git checkout PhraseHandling
+
+git sparse-checkout add src/model/dbSQL
+
+
+git sparse-checkout disable
+
+# list of files in the repository, including those not checked out.
+ git ls-tree -r HEAD --name-only    
+
+# list of file in sparse checkout
+ git sparse-checkout list

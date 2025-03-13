@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/test.css" type="text/css">
+    <title>Simple HTML Form</title>
+</head>
+
+<body>
+    <form class="language-form" method="post">
+
+        <fieldset id="lesson-settings">
+            <label for="lesson-name">Lesson Name:</label>
+            <input type="text" class="lesson-input" id="lesson-input">
+            <label for="lesson-category">Category:</label>
+            <select id="lesson-category">
+                <option value="verbs">Verb</option>
+                <option value="banana">Nouns</option>
+                <option value="orange">Sayings</option>
+                <option value="other">Other...</option>
+            </select>
+            <input type="text" id="custom-category" placeholder="Enter new category" style="display: none;">
+        </fieldset>
+
+        <script>document.getElementById("lesson-category").addEventListener("change", function () {
+                let customInput = document.getElementById("custom-category");
+                if (this.value === "other") {
+                    customInput.style.display = "inline-block";
+                    customInput.focus();
+                } else {
+                    customInput.style.display = "none";
+                }
+            });</script>
+
+        <fieldset id="language-settings">
+            <container class="languages">
+                <div class="language-panel">
+                    <div class="border-text">Base Language</div>
+                    <div class="dropdown-container">
+                        <label for="baselanguage">Language:</label>
+                        <select id="baselanguage" name="baselanguage">
+                            <option value="en" selected>English</option>
+                            <option value="sw">Swahili</option>
+                        </select>
+                    </div>
+
+                    <div class="dropdown-container">
+                        <label for="baseRegion">Region:</label>
+                        <select id="baseRegion" name="baseRegion">
+                            <option value="en-US" selected>English (US)</option>
+                            <option value="sw-TZ">Swahili (Tanzania)</option>
+                        </select>
+                    </div>
+
+                    <div class="dropdown-container">
+                        <label for="baseVoice">Voice:</label>
+                        <select id="baseVoice" name="baseVoice">
+                            <option value="Scott" selected>Scott</option>
+                            <option value="Rehema">Rehema</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="language-panel">
+                    <div class="border-text">Target Language</div>
+                    <div class="dropdown-container">
+                        <label for="language">Language:</label>
+                        <select id="language" name="language">
+                            <option value="en">English</option>
+                            <option value="sw" selected>Swahili</option>
+                        </select>
+                    </div>
+
+                    <div class="dropdown-container">
+                        <label for="region">Region:</label>
+                        <select id="region" name="region">
+                            <option value="en-US">English (US)</option>
+                            <option value="sw-TZ" selected>Swahili (Tanzania)</option>
+                        </select>
+                    </div>
+
+                    <div class="dropdown-container">
+                        <label for="voice">Voice:</label>
+                        <select id="voice" name="voice">
+                            <option value="Scott">Scott</option>
+                            <option value="Rehema" selected>Rehema</option>
+                        </select>
+                    </div>
+                </div>
+            </container>
+        </fieldset>
+
+        <fieldset class="phrase-entry">
+            <textarea placeholder="Add a new phrase ..." rows="2" cols="75" name="phrase"
+                id="phrase">This has taken all day. I need a cookie</textarea>
+            <button type="submit" class="translate-button">Translate</button>
+        </fieldset>
+
+        <audio id="audio-player" allow="audioplay"></audio>
+
+        <ul class="phrase-list">
+            <!-- <li class="phrase-item">
+                <div id="0" class="phrase-base phrase">I want a cookie</div>
+                <div id="1" class="phrase-target phrase">Nataka kuki</div>
+            </li> -->
+        </ul>
+
+    </form>
+
+    <script src="scripts/initialize.js" type="module"></script>
+</body>
+
+</html>
