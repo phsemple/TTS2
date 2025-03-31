@@ -11,9 +11,9 @@ translateForm.addEventListener('submit', async (e) => {
 
     // If the translate button was the submit source we want to block default.
     if (e.submitter && e.submitter.classList.contains('translate-button')) {
-        e.preventDefault();
+        e.preventDefault(); // we don't want a submit, we handle the translate
         const translateButton = document.querySelector('.translate-button');
-        translateButton.disabled = true;
+        translateButton.disabled = true; // disable the button while we translate
         const phraseItems = await getPhrase(translateForm);
         insertPhrases(phraseItems);
         translateButton.disabled = false;

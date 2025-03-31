@@ -28,12 +28,3 @@ export default function insertPhrases(phraseItems) {
     // ✅ Append to the list
     listElement.appendChild(listItem);
 }
-
-// const listElement = document.querySelector('.phrase-list');
-// const base = phraseItems.base;
-// const target = phraseItems.target;
-// const phraseItem = `
-//     <li class="phrase-item">
-//         <div  id=${base.getKey()} class="phrase-base phrase">${base.getPhrase()}</div>
-//         <div  id=${target.getKey()} class="phrase-target phrase">${target.getPhrase()}</div>
-//     </li>`
