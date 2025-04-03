@@ -15,10 +15,10 @@ async function connectDB() {
 
         // Create Connection Object
         connection = await mysql.createConnection({
-            host: 'localhost',       // or your database server IP
-            user: 'root',            // your MySQL username
-            password: process.env.MYSQL_PWD,
-            database: 'languages'     
+          host: process.env.MYSQLHOST, // or your database server IP
+          user: process.env.MYSQLUSER, // your MySQL username
+          password: process.env.MYSQL_PWD,
+          database: process.env.MYSQLDATABASE,
         });
         
         registerCleanupItem(cleanupDB);  // put our db cleanup on cleanup stack
