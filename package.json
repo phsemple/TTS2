@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "app.js",
   "type": "module",
- "scripts": {
-  "devserver": "nodemon app.js",
-  "watch:sass": "sass --watch public/sass/main.scss:public/styles/style.css",
-  "dev": "npm-run-all --parallel watch:sass devserver",
-  "start": "node app.js"
-},
+  "scripts": {
+    "devserver": "nodemon app.js",
+    "watch:sass": "sass --watch public/sass/main.scss:public/styles/style.css",
+    "dev": "npm-run-all --parallel watch:sass devserver",
+    "start": "node app.js"
+  },
   "keywords": [],
   "author": "Patrick Harley Semple",
   "license": "ISC",
@@ -17,7 +17,11 @@
     "nodemon": "^3.1.9"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0",
     "mysql2": "^3.12.0",
     "node-fetch": "^3.3.2",
     "serve": "^14.2.4",
