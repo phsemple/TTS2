@@ -29,7 +29,7 @@ async function connectDB() {
         registerCleanupItem(cleanupDB);  // put our db cleanup on cleanup stack
         
         // ✅ Confirm Connection
-        console.log('Connected to MySQL database: languages');
+        console.log(`Connected to MySQL database: ${process.env.MYSQLDATABASE}`);
     } catch (error) {
         console.log(`ConnectDB: Error ${error}`)
     }
