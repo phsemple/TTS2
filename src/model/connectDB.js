@@ -22,7 +22,7 @@ async function connectDB() {
         connection = await mysql.createConnection({
           host: process.env.MYSQLHOST, // or your database server IP
           user: process.env.MYSQLUSER, // your MySQL username
-          password: process.env.MYSQL_PWD,
+          password: process.env.MYSQLPASSWORD,
           database: process.env.MYSQLDATABASE,
         });
         
