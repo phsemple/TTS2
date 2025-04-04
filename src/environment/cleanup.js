@@ -6,11 +6,12 @@ function cleanup() {
 
     while (cleanupRegister.length > 0)
     {
-        (cleanupRegister.pop())();
+        (cleanupRegister.pop())(); // execute the function on the cleanup stack
     }
 
 }
 
+// cleanup on exit: eg. close DB connections, etc.
 export function registerCleanupItem(funcToClean)
 {
     cleanupRegister.push(funcToClean);

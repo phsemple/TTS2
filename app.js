@@ -42,5 +42,6 @@ app.use('/lesson',lessonRoute)
 //     res.sendFile(path.resolve("public/index.html"));
 // })
 
+console.log(`Running on the railway this is my PORT ${process.env.PORT}`);
 const openPort = app.listen(process.env.PORT || 3000);
 console.log(`Listening on Port ${openPort.address().port}`);
