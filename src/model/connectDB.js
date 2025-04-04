@@ -15,7 +15,7 @@ async function connectDB() {
         console.log(`Connecting to MySQL database...    S
                    host: ${process.env.MYSQLHOST} 
                    user: ${process.env.MYSQLUSER}
-                    password: ${process.env.MYSQL_PWD}   
+                    password: ${process.env.MYSQL_ROOT_PASSWORD}   
                    database: ${process.env.MYSQLDATABASE}`);
         
         // Create Connection Object
