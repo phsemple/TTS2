@@ -42,4 +42,5 @@ app.use('/lesson',lessonRoute)
 //     res.sendFile(path.resolve("public/index.html"));
 // })
 
-app.listen(process.env.PORT || 3000, () => console.log(`Listening on Port ${process.env.PORT} || 3000`));
+const openPort = app.listen(process.env.PORT || 3000);
+console.log(`Listening on Port ${openPort.address().port}`);
