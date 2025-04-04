@@ -11,8 +11,8 @@ export default function initializeEnviroment()
 function setExitConditions() {
     process.on('exit', (code) => {
         console.log(`Process exiting with code: ${code}`)
-        cleanup()
-};
+        cleanup();
+});
 
     // ✅ Capture termination signals
     process.on('SIGINT', () => {
