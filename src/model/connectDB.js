@@ -12,7 +12,12 @@ async function connectDB() {
     //     mysql -u root -p
 
     try {
-
+        console.log(`Connecting to MySQL database...    S
+                   host: ${process.env.MYSQLHOST} 
+                   user: ${process.env.MYSQLUSER}
+                    password: ${process.env.MYSQL_PWD}   
+                   database: ${process.env.MYSQLDATABASE}`);
+        
         // Create Connection Object
         connection = await mysql.createConnection({
           host: process.env.MYSQLHOST, // or your database server IP
