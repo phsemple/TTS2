@@ -1,9 +1,5 @@
 
-DROP DATABASE IF EXISTS languages;
 
-CREATE DATABASE languages;
-
-USE languages;
 
 -- A lesson can be categorized, although this may be loosely
 -- enforced. It will be defaulted to uncategorized.

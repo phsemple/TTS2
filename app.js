@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import { config } from "dotenv";
 import { fileURLToPath } from 'url';
-
+ 
 // environment: 
 import initializeEnviroment from './src/environment/initialize.js';
 
@@ -17,6 +17,7 @@ import phraseRoute from './src/routes/phraseRoute.js';
 import lessonRoute from './src/routes/lessonRoute.js';
 
 config(); //.env
+  
 initializeEnviroment();
 connectDB();  // hook in the database.
 
@@ -42,6 +43,6 @@ app.use('/lesson',lessonRoute)
 //     res.sendFile(path.resolve("public/index.html"));
 // })
 
-console.log(`Running on the railway this is my PORT ${process.env.PORT}`);
+console.log(`If railway the will be PORT ${process.env.PORT}, otherwise 3000`);
 const openPort = app.listen(process.env.PORT || 3000);
 console.log(`Listening on Port ${openPort.address().port}`);

@@ -1,7 +1,5 @@
 
 
-USE languages;
-
 INSERT INTO langcodes ( langcode, language)
 VALUES ( 'en', 'English'),
 	('sw', 'Swahili');
