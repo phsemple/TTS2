@@ -2,16 +2,16 @@ import cleanup from './cleanup.js'
 
 
 // define exit event behavior.
-export default function initializeEnviroment()
+export default function initializeEnvironment()
 { 
     setExitConditions();
 }
 
-// set the exit event handlers.
+// set the exit event handler.
 function setExitConditions() {
     process.on('exit', (code) => {
         console.log(`Process exiting with code: ${code}`)
-        cleanup();
+        cleanup(); // run registered cleanup steps: e.g. close database
 });
 
     // ✅ Capture termination signals

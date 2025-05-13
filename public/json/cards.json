@@ -1,0 +1,102 @@
+{
+  "deck": "Family",
+  "description": "Family Relationships",
+  "category": "Household and Family",
+  "languages": [
+    {
+      "type": "front",
+      "language": "English",
+      "code": "en",
+      "region": "United States",
+      "region-code": "en-US",
+      "voice": "Scott"
+    },
+    {
+      "type": "back",
+      "language": "Swahili",
+      "code": "sw",
+      "region": "Tanzania",
+      "region-code": "sw-TZ",
+      "voice": "Rehema"
+    }
+  ],
+  "cards": [
+    {
+      "id": "157b174d-cb2a-4f44-b91b-d579d105efd7",
+      "state": "new",
+      "sides": [
+        {
+          "side": "front",
+          "phrase": "I want"
+        },
+        {
+          "side": "back"
+        }
+      ]
+    },
+    {
+      "id": "157b174d-cb2a-4f44-b91b-d579d135efd7",
+      "state": "active",
+      "sides": [
+        {
+          "side": "front",
+          "phrase": "We want",
+          "audio": "front.mp3"
+        },
+        {
+          "side": "back",
+          "phrase": "2 Ninataka",
+          "audio": "back.mp3"
+        }
+      ]
+    },
+    {
+      "id": "157b174d-cb2a-4f44-b91b-3579d105efd7",
+      "state": "active",
+      "sides": [
+        {
+          "side": "front",
+          "phrase": "They want",
+          "audio": "front.mp3"
+        },
+        {
+          "side": "back",
+          "phrase": "3 Ninataka",
+          "audio": "back.mp3"
+        }
+      ]
+    },
+    {
+      "id": "157b174d-cb2a-4f44-b91b-d579d135efd7",
+      "state": "deleted",
+      "sides": [
+        {
+          "side": "front",
+          "phrase": "Us want",
+          "audio": "front.mp3"
+        },
+        {
+          "side": "back",
+          "phrase": "4 Ninataka",
+          "audio": "back.mp3"
+        }
+      ]
+    },
+    {
+      "id": "157b174d-cb2a-4f44-b391b-d579105efd7",
+      "state": "active",
+      "sides": [
+        {
+          "side": "front",
+          "phrase": "She wants",
+          "audio": "front.mp3"
+        },
+        {
+          "side": "back",
+          "phrase": "5 Ninataka",
+          "audio": "back.mp3"
+        }
+      ]
+    }
+  ]
+}

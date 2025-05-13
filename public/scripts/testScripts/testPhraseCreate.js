@@ -1,7 +1,7 @@
 
 import { v4 as uuidv4 } from 'uuid';
-import processPhrase from '../../src/controller/processPhrase.js'
-import initialize from "./initialize.js";
+import processPhrase from '../../../src/controller/processPhrase.js'
+import initialize from "../initialize.js";
 
 async function translatePhrase()
 {

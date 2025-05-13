@@ -1,5 +1,4 @@
 import { config } from "dotenv";
-import fetch from "node-fetch";
 import path from 'path';
 import fs from 'fs/promises'
 import { spawn } from 'child_process' // allows us to use ffmpeg and ffprobe

@@ -1,7 +1,7 @@
 import { readFile } from 'fs/promises';
 import path from 'path';
-import testInitialize from "./initialize.js";
-import createLesson from "../../src/controller/createLesson.js";
+import testInitialize from "../initialize.js";
+import createLesson from "../../../src/controller/createLesson.js";
 
 /* This build a test json file for the lesson object. */
 

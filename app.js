@@ -7,7 +7,7 @@ import { config } from "dotenv";
 import { fileURLToPath } from 'url';
  
 // environment: 
-import initializeEnviroment from './src/environment/initialize.js';
+import initializeEnvironment from './src/environment/initialize.js';
 
 // mysql
 import connectDB from './src/model/connectDB.js';
@@ -18,7 +18,7 @@ import lessonRoute from './src/routes/lessonRoute.js';
 
 config(); //.env
   
-initializeEnviroment();
+initializeEnvironment(); 
 connectDB();  // hook in the database.
 
 // We are using ECMAScript modules, so need to supply __filename and __dirname
@@ -36,13 +36,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 console.log(`Express Static is: ${path.join(__dirname, 'public')}`);
 
-app.use('/phrase', phraseRoute);
 app.use('/lesson',lessonRoute)
+app.use('/phrase', phraseRoute);
 // app.use("/", (req, res) => {
 //     console.log(`path ${path.resolve('public/index.html')}`)
 //     res.sendFile(path.resolve("public/index.html"));
 // })
 
-console.log(`If railway the will be PORT ${process.env.PORT}, otherwise 3000`);
 const openPort = app.listen(process.env.PORT || 3000);
 console.log(`Listening on Port ${openPort.address().port}`);

@@ -1,7 +1,7 @@
 import fs,{ readFile } from 'fs/promises';
 import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
-import testInitialize from "./initialize.js";
+import testInitialize from "../initialize.js";
 import processPhrase from '../controller/processPhrase.js'
 
 /* This build a test json file for the lesson object. */
